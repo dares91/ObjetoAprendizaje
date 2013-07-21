@@ -3,16 +3,50 @@
   <head>
         <title>OA-Malware-Historia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-        <script src="js/jquery-2.0.3.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/Menu.js"></script>
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">  
-        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">  
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+        <script>
+        $(function() {
+          $( "#accordion" ).accordion();
+        });
+        </script> 
   </head>
-  <body onload = "agregarMenu();">
+  <body onload = "agregarMenu(2);">
     <div id="mainMenu" class="dropdown">
     </div>
-     <h2>Historia</h2>
+      
+      <div id="accordion">
+  <h3>Fecha</h3>
+  <div>
+    <p>
+    párrafo a agregar
+    </p>
+  </div>
+  <h3>Fecha</h3>
+  <div>
+    <p>
+    párrafo a agregar
+    </p>
+  </div>
+  <h3>Fecha</h3>
+  <div>
+    <p>
+      párrafo a agregar
+    </p>
+ 
+  </div>
+  <h3>Fecha</h3>
+  <div>
+    <p>
+    párrafo a agregar
+    </p>
+    <p>
+    párrafo a agregar
+    </p>
+  </div>
+</div>
 
 
   </body>
