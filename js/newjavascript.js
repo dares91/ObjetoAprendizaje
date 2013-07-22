@@ -121,8 +121,9 @@ function establecerCeldaSeleccionada(objeto){
                         }
                         else{
                             document.getElementById("contenedorAlertas").innerHTML = '\
-                                                                                    <span class="label label-warning">Lo sentimos. Usted no ha\
-                                                                                     contestado correctamente.</span>\
+                                                                                    <span class="label label-warning"><h1>Lo sentimos. <br/>Usted no ha\
+                                                                                     contestado\
+                                                                                     <br/>   correctamente.</h1></span>\
                                                                                     <br/>\
                                                                                     <br/>\
                                                                                     <br/>\
