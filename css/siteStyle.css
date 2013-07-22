@@ -1,57 +1,58 @@
-a{
-		color:#FF0000;
-		text-decoration:none;
-	}
-	a:hover{
-		text-decoration:underline;
-	}
+.divTipoMalware {   
+    border-bottom: solid #cccccc 1px;  
+    padding-left: 20px;
+    display: block;
+    font-size: 1.4em;
+    padding:  10px;
+    padding-left: 10px;
+     height: 20px;
+     border: solid #b8c8cf 1px;
+     border-bottom:  none;
+     margin-left:  30px;
+     color: #3c9b9e;
+     background: url("../img/selectorChecked3.png") no-repeat center right;
+     min-width: 150px;
+}
 
-	.sideMenu{
+.first{
+    border-top-left-radius:  20px !important; 
+    border-top-right-radius:  20px !important;
+}
 
-	}
+.last{
+    border-bottom-left-radius:   20px;
+    border-bottom:  solid #b8c8cf 1px;
+    border-bottom-right-radius:   20px;
+}
+.divTipoMalware:hover{
+    background: #f7f7f7 url("../img/selectorChecked4.png") no-repeat center right ;
+    text-decoration: none;
+    cursor: pointer; 
+    color: #092b2d;
     
-	#puzzle_container{
-		line-height:500px;
-		text-align:center;
-		vertical-align:center;
-		border:10px outset #CCCCCC;
-		position:relative;
-		color: #FFFFFF;
-		background-color: #707070;
-		
-		width: 520px;	/* IE 5.x */
-		width/* */:/**/500px;	/* Other browsers */
-		width: /**/500px;	
-		
-		height: 520px;	/* IE 5.x */
-		height/* */:/**/500px;	/* Other browsers */
-		height: /**/500px;			
+}
 
-	}
-	
-	#puzzle_container .square{
-		overflow:hidden;
-		border-left:1px solid #FFF;
-		border-top:1px solid #FFF;
-		position:absolute;
-	}
-
-	.activeImageIndicator{
-		border:2px solid red;
-		position:absolute;
-		z-index:10000;
-	}
-	.revealedImage{
-		position:absolute;
-		left:0px;
-		opacity:0;
-		filter:alpha(opacity=50);
-		top:0px;
-		z-index:50000;
-	}
-        
+.subtitle{
+    color: #8c8e92;
+    margin-bottom: 30px;
+}
 
 
-        .enlacesAjuegos{
-            border: solid white 2px;
-        }
+@media (min-width: 770px) {
+     .menuMalware {
+        position:fixed;
+        left: 3px;
+        width: 20%; 
+     }
+ }
+
+.lead{
+    font-size: 17px !important;
+}
+
+.activeLink{
+    background: #0a6568 url("../img/selectorChecked2.png") no-repeat center right !important;
+    color: white !important;
+    border-right: none;
+}
+
