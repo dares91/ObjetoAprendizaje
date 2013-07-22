@@ -1,17 +1,18 @@
 $(document).ready(function (){
-   $(".divTipoMalware ").click(function (){
-        $(".divTipoMalware").removeClass("activeLink");
-        $(this).addClass("activeLink");
-        var anchor= $(this).attr("href").toString().replace("#","");
-        scrollToAnchor(anchor);
-    });
-    
+   
     $(document).on("scroll",function (){
            var pscroll=$(window).scrollTop();
             if(pscroll>150)
-               $(".menuMalware").css({"top":"40px"});   
+               $(".staticSideMenu").css({"top":"40px"});   
              else
-                 $(".menuMalware").css({"top":(220-pscroll)});        
+                 $(".staticSideMenu").css({"top":(220-pscroll)});        
+    });
+    
+    $(".itemStacticMenu ").click(function (){
+        $(".itemStacticMenu").removeClass("activeLink");
+        $(this).addClass("activeLink");
+        var anchor= $(this).attr("href").toString().replace("#","");
+        scrollToAnchor(anchor);
     });
 });
 

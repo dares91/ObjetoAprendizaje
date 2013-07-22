@@ -1,8 +1,16 @@
-.divTipoMalware {   
+@media (min-width: 770px) {
+     .staticSideMenu {
+        position:fixed;
+        left: 3px;
+        width: 20%; 
+     }
+ }
+
+.itemStacticMenu {   
     border-bottom: solid #cccccc 1px;  
     padding-left: 20px;
     display: block;
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding:  10px;
     padding-left: 10px;
      height: 20px;
@@ -14,17 +22,7 @@
      min-width: 150px;
 }
 
-.first{
-    border-top-left-radius:  20px !important; 
-    border-top-right-radius:  20px !important;
-}
-
-.last{
-    border-bottom-left-radius:   20px;
-    border-bottom:  solid #b8c8cf 1px;
-    border-bottom-right-radius:   20px;
-}
-.divTipoMalware:hover{
+.itemStacticMenu:hover{
     background: #f7f7f7 url("../img/selectorChecked4.png") no-repeat center right ;
     text-decoration: none;
     cursor: pointer; 
@@ -32,21 +30,23 @@
     
 }
 
+.itemStaticMenu-first{
+    border-top-left-radius:  20px !important; 
+    border-top-right-radius:  20px !important;
+}
+
+.itemStaticMenu-last{
+    border-bottom-left-radius:   20px;
+    border-bottom:  solid #b8c8cf 1px;
+    border-bottom-right-radius:   20px;
+}
+
 .subtitle{
     color: #8c8e92;
     margin-bottom: 30px;
 }
 
-
-@media (min-width: 770px) {
-     .menuMalware {
-        position:fixed;
-        left: 3px;
-        width: 20%; 
-     }
- }
-
-.lead{
+.mylead{
     font-size: 17px !important;
 }
 
@@ -56,3 +56,14 @@
     border-right: none;
 }
 
+.my-hero-unit{
+    padding: 30px 30px !important; 
+}
+
+.imgCausaPropagacion{
+    width: 30%;
+}
+
+.descCausaPropagacion{
+    
+}

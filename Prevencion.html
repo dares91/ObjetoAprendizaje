@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <title>OA-Malware-Prevención</title>
+        <title>OA-Malware-Tipos de Malware</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">     
         <script src="js/jquery-2.0.3.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/Menu.js"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">  
         <link href="css/bootstrap-responsive.min.css" rel="stylesheet">  
+        <link rel="stylesheet" type="text/css" href="css/siteStyle.css">
+        <script src="js/globalJS.js"></script>
+
   </head>
-  <body onload = "agregarMenu();">
+
+
+ <body onload = "agregarMenu()">  
+    <a name="propagacion"></a>
     <div id="mainMenu" class="dropdown">
     </div>
-      <h2>Formas de propagacion y cómo evitarlos</h2>
-
-
+    
+    <h2 style="padding-left: 10%;">Formas de propagación del Malware y medidas Antimalware</h2>
+    <hr/>    
+    <div class="span3 ">    
+        <div class="row">
+            <div class=" staticSideMenu">         
+                <a class="itemStacticMenu itemStaticMenu-first activeLink" href="#propagacion" >Propagación  </a>     
+                <a class="itemStacticMenu itemStaticMenu-last" href="#spam">Medidas antimalware </a>  
+            </div>
+        </div>
+    </div>
+    <div class="span9" >
+        <div class="row">
+            <div class="hero-unit my-hero-unit ">
+                <h2 class="subtitle">Formas de Propagación del Malware</h2>
+                <p>El malware puede ser transferido de un usuario a otro y de un dispositivo a otro, 
+                    mediante múltiples medios y mecanismos, entre ellos:</p>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td class="imgCausaPropagacion">
+                           image  
+                        </td>
+                        <td class="descCausaPropagacion">
+                            El correo electrónico
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imgCausaPropagacion">
+                           image  
+                        </td>
+                        <td  class="descCausaPropagacion">
+                            A través de software de mensajería instantánea como el messenger de Microsoft y servicios 
+                            de chat proveídos por las redes sociales como facebook y google plus. 
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class="imgCausaPropagacion">
+                           image  
+                        </td>
+                        <td class="descCausaPropagacion">
+                            Programas p2p como uTorrent, el cual es utilizado para compartir archivos.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="imgCausaPropagacion">
+                           image  
+                        </td>
+                        <td  class="descCausaPropagacion">
+                           A través de la red inalámbrica 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
   </body>
 </html>
