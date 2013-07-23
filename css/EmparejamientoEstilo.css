@@ -25,8 +25,8 @@
 }
 
 #bti1, #bti2, #bti3, #bti4, #bti5, #btd1, #btd2, #btd3, #btd4, #btd5{
-    height: 50px;
-    width: 50%;
+    height: 85px;
+    width: 250px;
     border-style: solid;
     color: white;
     background: grey;
