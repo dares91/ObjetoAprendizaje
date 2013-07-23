@@ -18,8 +18,7 @@ function comprovar(){
         
         for(var a = 1; a<=9; a++)
         {
-            alert("g"+a);
-            document.getElementById("g"+a).stylebackgroundColor = "lightgreen";
+            document.getElementById("g"+a).style.backgroundColor = "lightgreen";
             
         }
         return;}
@@ -27,7 +26,6 @@ function comprovar(){
     
     var victoria = false;
     for(var i = 0; i<9;i++){
-        alert(ArregloGanadores[i]);
         if(document.getElementById(ArregloGanadores[i]).checked === false)
             break;
         else
