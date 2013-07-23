@@ -8,7 +8,7 @@
 	
 	*/
 		
-	var puzzleImages = ['img/imgRompeCabezas/1.jpg'];	// Array of images to choose from
+	var puzzleImages = ['img/virus.jpg','img/gusano.jpg','img/spyware.jpg','img/doctor.jpg','img/pcseek.jpg','img/protected.jpg'];	// Array of images to choose from
 	var rows = 3;
 	var cols = 3;
 		

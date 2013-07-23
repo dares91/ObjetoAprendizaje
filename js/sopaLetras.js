@@ -83,7 +83,6 @@ function setWordsInSoup(){
                     for(var c in palabras[p]){
                         $("#"+ramdonRow+"-"+ramdonCol).html(palabras[p].charAt(c)); //setear cada char de la palabra en la celda con coordenada (ramdomRow,ramdomCol)
                          busyTDs.push(ramdonRow+"-"+ramdonCol); // agregar id de la celda al arreglo de celdas ocupadas
-                        $("#"+ramdonRow+"-"+ramdonCol).css({"background-color":"#cccccc"});
                         ramdonCol++;
                     }
                     break;
@@ -96,8 +95,7 @@ function setWordsInSoup(){
                     
                     for(var c in palabras[p]){
                         $("#"+ramdonRow+"-"+ramdonCol).html(palabras[p].charAt(c)); //setear cada char de la palabra en la celda con coordenada (ramdomRow,ramdomCol)
-                        busyTDs.push(ramdonRow+"-"+ramdonCol);  // agregar id de la celda al arreglo de celdas ocupadas
-                        $("#"+ramdonRow+"-"+ramdonCol).css({"background-color":"#cccccc"});
+                        busyTDs.push(ramdonRow+"-"+ramdonCol);  // agregar id de la celda al arreglo de celdas ocupadas                        
                         ramdonCol--;
                     }
                     break;
@@ -110,8 +108,7 @@ function setWordsInSoup(){
                       
                     for(var c in palabras[p]){
                         $("#"+ramdonRow+"-"+ramdonCol).html(palabras[p].charAt(c));//setear cada char de la palabra en la celda con coordenada (ramdomRow,ramdomCol)
-                        busyTDs.push(ramdonRow+"-"+ramdonCol+"");   //agregar celda al arreglo de celdas ocupadas
-                        $("#"+ramdonRow+"-"+ramdonCol).css({"background-color":"#cccccc"});
+                        busyTDs.push(ramdonRow+"-"+ramdonCol+"");   //agregar celda al arreglo de celdas ocupadas                  
                         ramdonRow++;
                     }
                     break;
@@ -125,7 +122,6 @@ function setWordsInSoup(){
                     for(var c in palabras[p]){
                         $("#"+ramdonRow+"-"+ramdonCol).html(palabras[p].charAt(c)); //setear cada char de la palabra en la celda con coordenada (ramdomRow,ramdomCol)
                         busyTDs.push(ramdonRow+"-"+ramdonCol+""); 
-                        $("#"+ramdonRow+"-"+ramdonCol).css({"background-color":"#cccccc"});
                         ramdonRow--;
                     }
                     break;
