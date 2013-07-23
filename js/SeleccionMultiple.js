@@ -5,9 +5,9 @@ var ArregloGanadores = ["fish","SpyWare","email","devices","Multimedia","antivir
 
 var cantOpor = 3;
 
-
+    var victoria = false;
 function comprovar(){
-    if(cantOpor === 0){
+    if(cantOpor === 0 && victoria === false){
         document.getElementById("Respuestas").innerHTML = '<br/></br>\
                                                             <div style="background-color:pink;\
                                                             border-style:solid;\
@@ -24,7 +24,7 @@ function comprovar(){
         return;}
     else{cantOpor--;
     
-    var victoria = false;
+
     for(var i = 0; i<9;i++){
         if(document.getElementById(ArregloGanadores[i]).checked === false)
             break;
