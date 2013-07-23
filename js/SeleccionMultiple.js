@@ -3,10 +3,28 @@ var ArreglodeTodos1 = ["human","ing","fish","SpyWare","email","devices","Multime
 
 var ArregloGanadores = ["fish","SpyWare","email","devices","Multimedia","antivirus","firewall","se","ESET"];
 
-
+var cantOpor = 3;
 
 
 function comprovar(){
+    if(cantOpor === 0){
+        document.getElementById("Respuestas").innerHTML = '<br/></br>\
+                                                            <div style="background-color:pink;\
+                                                            border-style:solid;\
+                                                            border-radius: 15px;\
+                                                            "><h2>Lo sentimos pero has perdido todas las oportunidades, a la derecha se muestran las respuestas\n\
+                                                             </h2>\
+                                                            </div>';
+        
+        for(var a = 1; a<=9; a++)
+        {
+            alert("g"+a);
+            document.getElementById("g"+a).stylebackgroundColor = "lightgreen";
+            
+        }
+        return;}
+    else{cantOpor--;
+    
     var victoria = false;
     for(var i = 0; i<9;i++){
         alert(ArregloGanadores[i]);
@@ -17,8 +35,18 @@ function comprovar(){
     }
     
     if(victoria === false)
-        alert("la paseaste");
+        document.getElementById("Respuestas").innerHTML = '<br/></br>\
+                                                            <div style="background-color:pink;\
+                                                            border-style:solid;\
+                                                            border-radius: 15px;\
+                                                            "><h2>Lo sentimos pero no has contestado correctamente\n\
+                                                             </h2><br/><h4>Tienes '+cantOpor+' Oportunidades</h4>\
+                                                            </div>';
     else
-        alert("contestaste correctamente");
-        
+        document.getElementById("Respuestas").innerHTML = '<div style="background-color:lightgreen;\
+                                                            border-style:solid;\
+                                                            border-radius: 15px;\
+                                                            "><h2>Perfecto has contestado correctamente</h2>\
+                                                            </div>';
+    }
 }

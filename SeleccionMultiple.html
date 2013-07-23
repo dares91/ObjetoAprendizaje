@@ -15,17 +15,21 @@
   <body onload = "agregarMenu()">
     <div id="mainMenu" class="dropdown">
     </div>
-     <h2>Juego de seleccion multiple</h2>
+     
      <div class="container-fluid">
          <div class="row-fluid">
-             <div class="span4"></div>
+             <div class="span4">
+                 <h2>Juego de seleccion multiple</h2>
+                 <div id="Respuestas">
+                 </div>
+             </div>
              <div class="span8">
                  <table class="table-striped">
                      <tr>
                          <td><h6>Responda con una o mas respuestas para cada interrogante </h6></td>
                          <td></td>
                          <td></td>
-                         <td><button onclick="comprovar();">Compruebe sus respuestas</button></td>
+                         <td></td>
                      </tr>                     
                      <tr style="height: 30px; background-color: lightcyan;">
                          <td> De los siguientes cuáles son tipos de Malware?</td>
@@ -36,8 +40,8 @@
                      <tr>
                          <td><label for="human">HUMAN</label><input type="checkbox"  id="human"/></td>
                          <td style="padding-left: 50px !important"><label for="ing">Ingeniería Social</label><input type="checkbox"  id="ing"/></td>
-                         <td style="padding-left: 50px !important"><label for="fish">Phishing</label><input type="checkbox"  id="fish"/></td>
-                         <td style="padding-left: 50px !important"><label for="SpyWare">Spyware</label><input type="checkbox"  id="SpyWare"/></td>
+                         <td id="g1" style="padding-left: 50px !important"><label for="fish">Phishing</label><input type="checkbox"  id="fish"/></td>
+                         <td id="g2" style="padding-left: 50px !important"><label for="SpyWare">Spyware</label><input type="checkbox"  id="SpyWare"/></td>
                      </tr>
                          
                      
@@ -48,10 +52,10 @@
                          <td/>
                      </tr>                     
                      <tr>
-                         <td><label for="email">Correo Electrónico</label><input type="checkbox"  id="email"/></td>
-                         <td style="padding-left: 50px !important"><label for="devices">Dispositivos de almacenamiento</label><input type="checkbox"  id="devices"/></td>
-                         <td style="padding-left: 50px !important"><label for="Multimedia">Archivos multimedia</label><input type="checkbox"  id="Multimedia"/></td>
-                         <td style="padding-left: 50px !important"><label for="directContact">Contacto directo entre dispositivos</label><input type="checkbox"  id="directContact"/></td>
+                         <td  id="g3"><label for="email">Correo Electrónico</label><input type="checkbox"  id="email"/></td>
+                         <td id="g4" style="padding-left: 50px !important"><label for="devices">Dispositivos de almacenamiento</label><input type="checkbox"  id="devices"/></td>
+                         <td id="g5" style="padding-left: 50px !important"><label for="Multimedia">Archivos multimedia</label><input type="checkbox"  id="Multimedia"/></td>
+                         <td  style="padding-left: 50px !important"><label for="directContact">Contacto directo entre dispositivos</label><input type="checkbox"  id="directContact"/></td>
                      </tr>
                      
                      
@@ -63,10 +67,10 @@
                          <td/>
                      </tr>
                      <tr>
-                         <td><label for="antivirus">Programas antivirus</label><input type="checkbox"  id="antivirus"/></td>
-                         <td style="padding-left: 50px !important"><label for="firewall">Uso de Firewall</label><input type="checkbox"  id="firewall"/></td>
-                         <td style="padding-left: 50px !important"><label for="descargaMalware">Descargar todo tipo de programas gratuitos</label><input type="checkbox"  id="descargaMalware"/></td>
-                         <td style="padding-left: 50px !important"><label for="click">Acostumbre a hacer click en todos los anuncios</label><input type="checkbox"  id="click"/></td>
+                         <td id="g6" ><label for="antivirus">Programas antivirus</label><input type="checkbox"  id="antivirus"/></td>
+                         <td id="g7" style="padding-left: 50px !important"><label for="firewall">Uso de Firewall</label><input type="checkbox"  id="firewall"/></td>
+                         <td  style="padding-left: 50px !important"><label for="descargaMalware">Descargar todo tipo de programas gratuitos</label><input type="checkbox"  id="descargaMalware"/></td>
+                         <td  style="padding-left: 50px !important"><label for="click">Acostumbre a hacer click en todos los anuncios</label><input type="checkbox"  id="click"/></td>
                      </tr>
                      
                      <tr style="height: 30px; background-color: lightcyan;">
@@ -76,14 +80,15 @@
                          <td/>
                      </tr>
                      <tr>
-                         <td><label for="se">Microsoft Security essential</label><input type="checkbox"  id="se"/></td>
-                         <td style="padding-left: 50px !important"><label for="ESET">Este antivirus</label><input type="checkbox"  id="ESET"/></td>
+                         <td id="g8" ><label for="se">Microsoft Security essential</label><input type="checkbox"  id="se"/></td>
+                         <td id="g9" style="padding-left: 50px !important"><label for="ESET">Este antivirus</label><input type="checkbox"  id="ESET"/></td>
                          <td style="padding-left: 50px !important"><label for="MalwareBorrador">Malware borrador</label><input type="checkbox"  id="MalwareBorrador"/></td>
                          <td style="padding-left: 50px !important"><label for="BarreM">Barre Malware</label><input type="checkbox"  id="BarreM"/></td>
                      </tr>
                  </table>
                  <br/>
-                 
+                 <br/>
+                 <button onclick="comprovar();">Compruebe sus respuestas</button>
              </div>
          </div>
      </div>
