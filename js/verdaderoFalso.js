@@ -7,7 +7,7 @@ function pregunta(title,pregunta,respCorrecta,respUsuario,retroalimentacion){
 }
 
 
-var ListPreguntas=new Array(
+var ListPreguntas=new Array( 
     new pregunta("Entiendo que...","Todo código malicioso es virus",
                 0,null,"No todo codigo malicioso es virus, el virus es solo uno de los tipos de malware que existen ")
    , new pregunta("Sobre la historia..","En 1981, trece años depues de invetada el primer ordenador, se produjo la primera epidemia de virus informáticos",
