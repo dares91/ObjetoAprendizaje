@@ -2,7 +2,7 @@
        '<li id="p0" ><a href="index.html">Inicio</a></li>',
        '<li id="p2" ><a href="Historia.html">Historia</a></li>',
        '<li id="p3"><a href="TiposMalware.html">Tipos de Malware</a></li>',
-       '<li id="p4"><a href="Prevencion.html">¿Cómo combatirlos?</a></li>',
+       '<li id="p4"><a href="Prevencion.html">¿Como combatirlos?</a></li>',
        '<li id="p4"><a href="Actividades.html">Actividades de Aprendizaje</a></li>'
        );  
  
